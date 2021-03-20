@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.header {
+  width: 90%;
+  max-width: 1146px;
+  margin: auto;
+  padding: 56px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: block;
+}
+.use-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.user-name {
+  color: rgb(255, 255, 255);
+  size: 16px;
+  line-height: 20px;
+  margin-right: 15px;
+}
+a {
+  text-decoration: none;
+}
+.app {
+  background: linear-gradient(90deg, #010202 0%,  #010202 45%, rgba(1, 2, 2, 0.2) 90.9%);
+  min-height: 100vh;
+  color: white;
+}
+.tags {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  opacity: 0.4;
+  color: #e5e5e5;
+}
+.film {
+  height:calc(100% - 152px) ;
+  width: 90%;
+  max-width: 1146px;
+  margin: auto;
+  padding: 7% 0;
+}
+.tags > * {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.description {
+  max-width: 460px;
+  font-size: 21px;
+  margin-bottom: 36px;
+}
+.age {
+  border:  1px solid #FFFFFF;
+  border-radius: 2px;
+  padding: 1px 5px;
+}
+.button {
+  border-radius: 6px;
+  border:none;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  padding: 11px 26px;
+  cursor: pointer;
+}
+.button-primary {
+  background: #EA6E20;
+  margin-right: 15px;
+   
+}
+.button-default {
+  background: #2F2F2F;
+
+}
+.button-text {
+  margin-left: 10px;
+ 
+}
+
+@media (max-width: 760px) {
+  .app {
+    background-position: bottom center;
+    padding-bottom: 400px;
+    background: url('../img/cover-image.jpg') no-repeat bottom center / 400px;
+  }
+  video {
+    display: none;
+  }
+  .film {
+    padding-top: 3%;
+  }
+  .description {
+    font-size: 16px;
+    max-width: 333px;
+  }
+  .film-logo{
+    max-width: 100%;
+  }
+}
+@media (max-width: 486px) {
+  .button-text {
+    display: none;
+  }
+  .user-name {
+    display: none;
+  }
+  .app {
+    padding-bottom: 350px;
+    background-size: 300px;
+  }
+  .button {
+    margin-bottom: 10px;
+  }
+}
